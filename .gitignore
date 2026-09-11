@@ -1,0 +1,184 @@
+# =========================================================
+# Dependencies
+# =========================================================
+
+node_modules/
+
+
+# =========================================================
+# Environment Variables / Secrets
+# =========================================================
+
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env.*.local
+
+# Allow example environment files
+!.env.example
+
+
+# =========================================================
+# Backend - Build Output
+# =========================================================
+
+backend/dist/
+backend/build/
+
+
+# =========================================================
+# Frontend - Build Output
+# =========================================================
+
+frontend/dist/
+frontend/build/
+
+# Vite
+frontend/.vite/
+
+
+# =========================================================
+# TypeScript
+# =========================================================
+
+*.tsbuildinfo
+
+
+# =========================================================
+# Logs
+# =========================================================
+
+*.log
+logs/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+
+# =========================================================
+# Testing / Coverage
+# =========================================================
+
+coverage/
+.nyc_output/
+
+
+# =========================================================
+# RAG - Uploaded Documents
+# =========================================================
+
+# Documents uploaded by users at runtime
+uploads/
+backend/uploads/
+frontend/uploads/
+
+# Runtime document storage
+backend/data/uploads/
+
+
+# =========================================================
+# RAG - Processed / Chunked Data
+# =========================================================
+
+# Generated chunks
+backend/chunks/
+backend/chunked_data/
+
+# Processed documents
+backend/processed/
+backend/processed_data/
+
+# Generated ingestion data
+backend/ingestion/
+
+
+# =========================================================
+# RAG - Embeddings / Vector Store
+# =========================================================
+
+# Local vector stores
+backend/vector_store/
+backend/vector-store/
+backend/vector_db/
+backend/vectordb/
+
+# Chroma
+backend/chroma/
+backend/chroma_db/
+backend/.chroma/
+
+# FAISS / local vector indexes
+*.faiss
+*.index
+
+# Embedding caches
+backend/embedding_cache/
+backend/embeddings_cache/
+
+
+# =========================================================
+# RAG - Generated Data
+# =========================================================
+
+backend/rag_data/
+backend/generated/
+
+
+# =========================================================
+# Local Databases
+# =========================================================
+
+*.sqlite
+*.sqlite3
+
+# Local database files
+backend/data/*.db
+
+
+# =========================================================
+# Temporary Files
+# =========================================================
+
+tmp/
+temp/
+*.tmp
+*.temp
+
+
+# =========================================================
+# IDE / Editor
+# =========================================================
+
+.vscode/
+.idea/
+.history/
+
+
+# =========================================================
+# Operating System
+# =========================================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
+# =========================================================
+# Editor Temporary Files
+# =========================================================
+
+*.swp
+*.swo
+*~
+
+
+# =========================================================
+# Runtime Files
+# =========================================================
+
+*.pid
+*.pid.lock
